@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "955908251589",
+    "project_id": "sua-fabrica-5c49d",
+    "storage_bucket": "sua-fabrica-5c49d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955908251589:android:62e0c2e538138ad5d8f5ac",
+        "android_client_info": {
+          "package_name": "com.meuvesti.fabricacamisaria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHZ6EgqWqEKsPa9y4Xx0C6IfBy63atbaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

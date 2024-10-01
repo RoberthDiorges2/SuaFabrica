@@ -114,7 +114,7 @@ dependencies:
 
 dependency_overrides:
   http: 1.2.1
-  pointer_interceptor: 0.10.1
+  pointer_interceptor: ^0.10.1+1
   uuid: ^4.0.0
   win32: 5.5.1
 

@@ -275,7 +275,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
       ),
     });
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -666,7 +666,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                                         duration: Duration(milliseconds: 500),
                                         curve: Curves.ease,
                                       );
-                                      setState(() {});
+                                      safeSetState(() {});
                                     },
                                     effect: smooth_page_indicator
                                         .ExpandingDotsEffect(

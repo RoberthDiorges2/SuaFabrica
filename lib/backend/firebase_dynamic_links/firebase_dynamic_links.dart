@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 const _kDynamicLinksUrl = 'https://fabricacamisaria.page.link';
 const _kAppBundleId = 'com.meuvesti.fabricacamisaria';
+const _kIosAppId = '1487114349';
 
 Future<String> generateCurrentPageLink(
   BuildContext context, {
@@ -22,6 +23,7 @@ Future<String> generateCurrentPageLink(
     androidParameters: const AndroidParameters(packageName: _kAppBundleId),
     iosParameters: const IOSParameters(
       bundleId: _kAppBundleId,
+      appStoreId: _kIosAppId,
     ),
     socialMetaTagParameters: SocialMetaTagParameters(
       title: title,

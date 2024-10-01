@@ -66,7 +66,7 @@ class _PinConfirmationWidgetState extends State<PinConfirmationWidget>
       ),
     });
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -176,11 +176,6 @@ class _PinConfirmationWidgetState extends State<PinConfirmationWidget>
                                 FlutterFlowTheme.of(context).primaryBackground,
                             selectedColor:
                                 FlutterFlowTheme.of(context).secondaryText,
-                            activeFillColor: Colors.black,
-                            inactiveFillColor:
-                                FlutterFlowTheme.of(context).primaryBackground,
-                            selectedFillColor:
-                                FlutterFlowTheme.of(context).secondaryText,
                           ),
                           controller: _model.pinCodeController,
                           onChanged: (_) {},
@@ -216,7 +211,7 @@ class _PinConfirmationWidgetState extends State<PinConfirmationWidget>
                                         (value, displayTime, shouldUpdate) {
                                       _model.timerMilliseconds = value;
                                       _model.timerValue = displayTime;
-                                      if (shouldUpdate) setState(() {});
+                                      if (shouldUpdate) safeSetState(() {});
                                     },
                                     textAlign: TextAlign.start,
                                     style: FlutterFlowTheme.of(context)

@@ -103,7 +103,7 @@ class _ServicesTypeWidgetState extends State<ServicesTypeWidget>
       this,
     );
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

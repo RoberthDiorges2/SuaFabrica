@@ -32,7 +32,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget> {
     _model.textFieldFocusNode ??= FocusNode();
 
     authManager.handlePhoneAuthStateChanges(context);
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
